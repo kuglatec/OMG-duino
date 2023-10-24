@@ -9,11 +9,7 @@
 // Define an IP address for the access point (AP)
 IPAddress APIP(192, 168, 1, 1);
 
-// Boolean flags to track key presses
-bool winPressed, ctrlPressed, altPressed, tabPressed;
-
 // Create instances of DNS server and web server
-DNSServer dnsServer;
 ESP8266WebServer webServer(80);
 
 // Initialize an empty HTML page
