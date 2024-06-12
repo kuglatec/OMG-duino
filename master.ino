@@ -3,8 +3,6 @@
 #include <ESP8266WebServer.h>
 #include <Wire.h>
 
-// Define DNS server port
-#define DNS_PORT 53
 
 // Define an IP address for the access point (AP)
 IPAddress APIP(192, 168, 1, 1);
@@ -69,9 +67,6 @@ void Index() {
 
 // Loop function
 void loop() {
-  // Process DNS requests
-  dnsServer.processNextRequest();
-
   // Handle incoming client requests
   webServer.handleClient();
 }
